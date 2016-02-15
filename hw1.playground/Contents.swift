@@ -22,9 +22,8 @@ class Words {
 //: ### variables the same type? If not, why?
 
 
-//: Yes, both wordA and wordB are optionals, and the values set to the instance variables are 
-//: both implicitly unwrapped optionals.
-
+//: No, they are not the same type. The values passed into the init function are Optional Strings, while the instance variables are of type String since the "!" forcefully unwraps any Optional set to it. So the Optionals that were passed into init were unwrapped and set as Strings.
+    
 
 //: ## Q2: Variable Types and Function Types
     static func arePalindromes(words: [String]) -> Bool {
